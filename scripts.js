@@ -29,7 +29,6 @@ const runOnClick = function (arg)  {
         
     }
 
-    console.log(addition());
     if (arg === "add")      addition(firstValue, secondValue);
     else if (arg === "sub") subtraction(firstValue, secondValue);
     else if (arg === "mul") multiplication(firstValue, secondValue);

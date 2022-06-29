@@ -9,5 +9,12 @@ div {
     margin-right: 20%; */
     text-align: center;
     padding: 5%;
+    padding-top: 2%;
     display: inline-block;
+}
+
+h1 {
+    border: 2px solid green;
+    background-color: black;
+    color: green;
 }

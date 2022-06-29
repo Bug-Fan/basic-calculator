@@ -16,7 +16,6 @@ const runOnClick = function (arg)  {
 
     const multiplication = (num1, num2) => {
         result = num1 * num2;
-        console.log(result);
     }
 
     const division = (num1, num2) => {

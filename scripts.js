@@ -28,11 +28,27 @@ const runOnClick = function (arg)  {
         
     }
 
-    if (arg === "add")      addition(firstValue, secondValue);
-    else if (arg === "sub") subtraction(firstValue, secondValue);
-    else if (arg === "mul") multiplication(firstValue, secondValue);
-    else if (arg === "div") division(firstValue, secondValue);
-    else if (arg === "avg") average(firstValue, secondValue);
+    switch(arg) {
+        
+        case "add":
+            addition(firstValue, secondValue);
+            break;
 
+        case "sub":
+            subtraction(firstValue, secondValue);
+            break;
+        
+        case "mul":
+            multiplication(firstValue, secondValue);
+            break;
+
+        case "div":
+            division(firstValue, secondValue);
+            break;
+
+        case "avg":
+            average(firstValue, secondValue);
+    }
+    
     document.getElementById("result").innerHTML = result;
 }

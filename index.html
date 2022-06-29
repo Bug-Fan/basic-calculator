@@ -8,24 +8,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h3><center>Hi this is a Calculator.</center></h3>
-    <table>
-        <tr><h1>Output will be displayed here...</h1></tr>
+    <center>
+    <h3>Hi this is a Calculator.</h3>
+    <div>
+        <tr><h1 id="result">Output will be displayed here...</h1></tr>
         <tr>
-            <div>
+            <form>
                 <label>First number:</label>
-                <input type="number" placeholder="Number Here" id="num1"><br>
+                <input type="number" placeholder="Number Here" id="num1"><br><br>
                 
                 <label>Second number:</label>
-                <input type="number" placeholder="Number Here" id="num2"><br>
+                <input type="number" placeholder="Number Here" id="num2"><br><br>
 
-                <input type="button" value="Addition" onclick="addition()"><br>
-                <input type="button" value="Subtraction" onclick="subtraction()"><br>
-                <input type="button" value="Multiplication" onclick="multiplication()"><br>
-                <input type="button" value="Division" onclick="division()"><br>
-                <input type="button" value="Average" onclick="average()"><br>
-            </div>
+                <input type="button" value="Addition" onclick="runOnClick('add')">
+                <input type="button" value="Subtraction" onclick="runOnClick('sub')"><br><br>
+                <input type="button" value="Average" onclick="runOnClick('avg')"><br><br>
+                <input type="button" value="Multiplication" onclick="runOnClick('mul')">
+                <input type="button" value="Division" onclick="runOnClick('div')"><br><br>
+                <input type="reset" value="Reset"><br><br>
+            </form>
         </tr>
-    </table>
+    </div>
+    </center>
+    <script src="scripts.js"></script>
 </body>
 </html>

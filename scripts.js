@@ -6,28 +6,6 @@ const runOnClick = function (arg)  {
     const firstValue = parseFloat(Value1.value);
     const secondValue = parseFloat(Value2.value);
 
-    const addition = (num1, num2) => {
-        result = num1 + num2;
-    }
-
-    const subtraction = (num1, num2) => {
-        result = num1 - num2;
-    }
-
-    const multiplication = (num1, num2) => {
-        result = num1 * num2;
-    }
-
-    const division = (num1, num2) => {
-        result = num1 / num2;
-    }
-
-    const average = (num1, num2) => {
-        addition(num1, num2);
-        result = result / 2;
-        
-    }
-
     switch(arg) {
         
         case "add":
@@ -51,4 +29,26 @@ const runOnClick = function (arg)  {
     }
     
     document.getElementById("result").innerHTML = result;
+}
+
+const addition = (num1, num2) => {
+    result = num1 + num2;
+}
+
+const subtraction = (num1, num2) => {
+    result = num1 - num2;
+}
+
+const multiplication = (num1, num2) => {
+    result = num1 * num2;
+}
+
+const division = (num1, num2) => {
+    result = num1 / num2;
+}
+
+const average = (num1, num2) => {
+    addition(num1, num2);
+    result = result / 2;
+    
 }
